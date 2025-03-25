@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Imagens</title>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<!--marques-->
+<style>
+.navbar{
+  background:#0DAEF2 ;
+  height: 7rem;
+  display: flex;
+  gap: 82px;
+  border: 1px solid black; /* Borda preta fina */
+}
+.logo{
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    padding-left: 54px;
+    padding-top: 34px;
+}
+.menu{
+    display: flex;
+    gap: 36px;
+    padding-top: 40px;
+    align-items: flex-start;
+}
+.menu a{
+    font-family: 'Inter', sans-serif;
+    font-weight: 250; /* Medium */
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.favoritos{
+    gap: 2px;
+    display: flex;
+    align-items: center;
+
+}
+.icons{
+    margin-left: auto;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.icons img{
+    cursor: pointer;
+}
+
+.header {
+    height: 149px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: white;
+}
+
+.title {
+    font-family: 'Newsreader', serif;
+    font-style: normal;
+    font-size: 4rem;
+    padding-left: 96px;
+    padding-top: 56px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 74px;
+    padding-right: 112px;
+}
+
+.update {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+
+.update strong {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filters button {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.filters .active {
+    background: #0DAEF2;
+    color: white;
+    border: none;
+}
+</style>
+
+
+
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">SoftBike</div>
+        <div class="menu">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <div class="favoritos">
+                <a href="#">Favoritos </a>
+                <img src="images/icons/Heart.svg" height="24px" width="24px" alt="Heart">
+            </div>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>     
+        </div>
+        <div class="icons">
+            <img src="images/icons/Insta.svg" height="24px" width="24px" alt="Insta">
+            <img src="images/icons/Face.svg" height="24px" width="24px" alt="Face">
+            <img src="images/icons/Message.svg" height="24px" width="24px" alt="Message">
+        </div>
+    </nav>
+    <!-- Navbar -->
+     <header class="header">
+        <div class="title">
+            Catálogo
+        </div>
+        <div class="header-right">
+            <span class="update">
+                <strong>Última atualização</strong> — 21 de Março, 2025
+            </span>
+            <div class="filters">
+                <button class="active">Padrão</button>
+                <button>A-Z</button>
+                <button>Preço</button>
+            </div>
+        </div>
+
+     </header>
+
+
+     <div class="container-catalogo">    
+        <div class="catalogo">
+            <div class="container">
+                <img src="images/catalog/bike1.jpg" alt="Produto 1">
+                <div class="container-texto">
+                    <h3>Bicicleta Mormaii 1995</h3>
+                    <p id="preco">R$ 3.900,00</p>
+                    <p >Asa Norte, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/bike2.jpg" alt="Produto 2">
+                <div class="container-texto">
+                    <h3>Bicicleta Caloi 2001</h3>
+                    <p id="preco">R$ 2.500,00</p>
+                    <p>Taguatinga, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/bike3.jpg" alt="Produto 3">
+                <div class="container-texto">
+                    <h3>Bicicleta Redc 2005</h3>
+                    <p id="preco">R$ 4.200,00</p>
+                    <p>Ceilândia, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/bike4.jpg" alt="Produto 4">
+                <div class="container-texto">
+                    <h3>Bicicleta Audax 1999</h3>
+                    <p id="preco">R$ 3.700,00</p>
+                    <p>Gama, DF</p>
+                </div>
+            </div>
+            
+            <div class="container">
+                <img src="images/catalog/bike5.jpg" alt="Produto 5">
+                <div class="container-texto">
+                    <h3>Bicicleta Santa Cruz 2002</h3>
+                    <p id="preco">R$ 5.000,00</p>
+                    <p>Samambaia, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/bike6.jpg" alt="Produto 6">
+                <div class="container-texto">
+                    <h3>Bicicleta cal 2002</h3>
+                    <p id="preco">R$ 2.900,00</p>
+                    <p>Recanto das Emas, DF</p>
+                </div>
+            </div>
+            
+            <div class="container">
+                <img src="images/catalog/bike7.jpg" alt="Produto 7">
+                <div class="container-texto">
+                    <h3>Produto 7</h3>
+                    <p id="preco">R$ 4.800,00</p>
+                    <p>Santa Maria, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/bike8.jpg" alt="Produto 8">
+                <div class="container-texto">
+                    <h3>Produto 8</h3>
+                    <p id="preco">R$ 3.600,00</p>
+                    <p>Paranoá, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/bike9.jpg" alt="Produto 9">
+                <div class="container-texto">
+                    <h3>Produto 9</h3>
+                    <p id="preco">R$ 2.750,00</p>
+                    <p>Núcleo Bandeirante, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/bike10.jpg" alt="Produto 10">
+                <div class="container-texto">
+                    <h3>Produto 10</h3>
+                    <p id="preco">R$ 3.400,00</p>
+                    <p>Guará, DF</p>
+                </div>
+            </div>
+            
+            <div class="container">
+                <img src="images/catalog/acessorio1.jpg" alt="Acessório 1">
+                <div class="container-texto">
+                    <h3>Acessório 1</h3>
+                    <p id="preco">R$ 150,00</p>
+                    <p>Brazlândia, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/acessorio2.jpg" alt="Acessório 2">
+                <div class="container-texto">
+                    <h3>Acessório 2</h3>
+                    <p id="preco">R$ 90,00</p>
+                    <p>Candangolândia, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/acessorio3.jpg" alt="Acessório 3">
+                <div class="container-texto">
+                    <h3>Acessório 3</h3>
+                    <p id="preco">R$ 200,00</p>
+                    <p>Sobradinho, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/acessorio4.jpg" alt="Acessório 4">
+                <div class="container-texto">
+                    <h3>Acessório 4</h3>
+                    <p id="preco">R$ 250,00</p>
+                    <p>Planaltina, DF</p>
+                </div>
+            </div>
+            
+            <div class="container">
+                <img src="images/catalog/roupa1.jpg" alt="Roupa 1">
+                <div class="container-texto">
+                    <h3>Roupa 1</h3>
+                    <p id="preco">R$ 120,00</p>
+                    <p>Riacho Fundo, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/roupa2.jpg" alt="Roupa 2">
+                <div class="container-texto">
+                    <h3>Roupa 2</h3>
+                    <p id="preco">R$ 80,00</p>
+                    <p>Águas Claras, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/roupa3.jpg" alt="Roupa 3">
+                <div class="container-texto">
+                    <h3>Roupa 3</h3>
+                    <p id="preco">R$ 150,00</p>
+                    <p>Vicente Pires, DF</p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/catalog/roupa4.jpg" alt="Roupa 4">
+                <div class="container-texto">
+                    <h3>Roupa 4</h3>
+                    <p id="preco">R$ 110,00</p>
+                    <p>São Sebastião, DF</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+
+
+<style>
+    body{
+        margin: 0;
+        background-color: #FBF9F9;
+    }
+    .container-catalogo{
+        align-items: center;
+        padding:  40px 203px;
+    }
+    .catalogo {
+            display: grid;
+            grid-template-columns: repeat(3, max-content);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .container-texto{
+            margin-left: 23px;
+        }    
+
+        .container {
+            background: #FAFAF5;
+            padding-bottom: 15px;
+            border-radius: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 388px;
+            height: 405px;
+        }
+
+        .container img {
+            max-width: 388px;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .container h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+        }
+
+        .container p {
+            font-size: 20px;
+            color: gray;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+        }
+
+        #preco{
+            font-size: 20px;
+            color: #0DAEF2;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+        }
+
+        .container button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: none;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .container button:hover {
+            background: #ffcc00;
+            color: black;
+        }
+
+
+
+        @media (max-width: 900px) {
+         .catalogo {
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+            }
+         }
+
+        @media (max-width: 600px) {
+         .catalogo {
+            grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas pequenas */
+          }
+        }
+</style>
+
+
+
+
+
+
+</body>
+</html>
