@@ -4,47 +4,288 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoftBike</title>
-    <!-- Link para o Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Navbar -->
-    <nav class="bg-blue-600 p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="#" class="text-white text-2xl font-bold">SoftBike</a>
-            <ul class="flex space-x-6">
-                <li><a href="#" class="text-white hover:text-gray-300">Início</a></li>
-                <li><a href="#" class="text-white hover:text-gray-300">Sobre Nós</a></li>
-                <li><a href="catalogo.html" class="text-white hover:text-gray-300">Catálogo</a></li>
-                <li><a href="#" class="text-white hover:text-gray-300">Contato</a></li>
-                <li><a href="Briefing\BriefingModelo.html" class="text-white hover:text-gray-300">Empresa</a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="logo">SoftBike</div>
+        <div class="menu">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="#reviews">Avaliações</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#patrocinadores">Patrocínios</a>
+            <a href="#">Contato</a>     
+        </div>
+        <div class="icons">
+            <img src="images/icons/Insta.svg" height="24px" width="24px" alt="Insta">
+            <img src="images/icons/Face.svg" height="24px" width="24px" alt="Face">
+            <img src="images/icons/Message.svg" height="24px" width="24px" alt="Message">
         </div>
     </nav>
+        <!-- Banner -->
+    <div class="banner">
+        <h1>Pedale com liberdade!</h1>
+        <p>Mais que bicicletas, entregamos paixão sobre duas rodas! Com anos de experiência no mercado, garantimos qualidade e inovação.</p>
+    </div>
 
-    <!-- Carrossel -->
-    <div class="relative max-w-3xl mx-auto mt-8">
-        <div class="overflow-hidden rounded-lg shadow-lg">
-            <div class="flex transition-transform duration-500" id="carouselImages">
-                <img src="images/catalog/bike1.jpg" alt="Imagem 1" class="w-full h-64 object-cover">
+    <!-- Imagem abaixo do banner -->
+    <div class="image-section">
+        <img src="images/shop.svg" alt="Loja de Bicicletas">
+    </div>
 
+    <!-- Seção de Avaliações -->
+<section id="reviews" class="reviews">
+    <h2>Avaliações</h2>
+    <div class="reviews-container">
+        <div class="review-card">
+            <p>"Preço justo e atendimento de qualidade"</p>
+            <div class="review-author">
+                <img src="images/users/joao.svg" alt="João Carlos">
+                <div>
+                    <strong>João Carlos</strong>
+                    <span>Empreendedor</span>
+                </div>
+            </div>
+        </div>
+        <div class="review-card">
+            <p>"Ótimo serviço de manutenção"</p>
+            <div class="review-author">
+                <img src="images/users/maria.svg" alt="Maria Clara">
+                <div>
+                    <strong>Maria Clara</strong>
+                    <span>Promotora</span>
+                </div>
+            </div>
+        </div>
+        <div class="review-card">
+            <p>"Meus filhos amaram as bicicletas"</p>
+            <div class="review-author">
+                <img src="images/users/roberto.svg" alt="Roberto Soares">
+                <div>
+                    <strong>Roberto Soares</strong>
+                    <span>Arquiteto</span>
+                </div>
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Corpo -->
-    <div class="text-center py-16">
-        <h2 class="text-3xl text-blue-600 font-semibold mb-4">Bem-vindo ao Meu Site</h2>
-        <p class="text-lg">Este é um template simples usando Tailwind CSS para demonstrar um site com tema claro e azul, incluindo uma navbar e um carrossel.</p>
+<footer class="footer">
+    <h1>Patrocínios</h1>
+    <div  id="patrocinadores" class="patrocinadores">
+        <div class="row">
+            <img src="images/icons/mormaii.svg" height="240px"  alt="Imagem 1" class="item">
+            <img src="images/icons/redbull.svg" height="240px"  alt="Imagem 1" class="item">
+        </div>
+        <div class="row">
+            <img src="images/icons/centauro.svg" height="340px"  alt="Imagem 1" class="item">
+            <img src="images/icons/decathlon.svg" height="340px"  alt="Imagem 1" class="item">
+        </div>
     </div>
+</footer>
+    
 
-    <!-- Footer -->
+    <!-- Footer
     <footer class="bg-blue-600 text-white text-center py-4">
         <p>&copy; 2025 MeuSite. Todos os direitos reservados.</p>
-    </footer>
+    </footer> -->
 
 
     
 </body>
+<style>
+    body{
+        margin: 0;
+        background-color: #E5E5E5;
+    }
+    .navbar{
+        background:#0DAEF2 ;
+        height: 7rem;
+        display: flex;
+        gap: 82px;
+        border: 1px solid black; /* Borda preta fina */
+    }
+    .logo{
+        font-family: 'Newsreader', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 48px;
+        padding-left: 54px;
+        padding-top: 34px;
+    }
+    .menu{
+        display: flex;
+        gap: 36px;
+        padding-top: 40px;
+        align-items: flex-start;
+    }
+    .menu a{
+        font-family: 'Inter', sans-serif;
+        font-weight: 250; /* Medium */
+        font-size: 20px;
+        line-height: 130%;
+        color: #000000;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .favoritos{
+        gap: 2px;
+        display: flex;
+        align-items: center;
+    
+    }
+    .icons{
+        margin-left: auto;
+        padding-right: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .icons img{
+        cursor: pointer;
+    }
+    .banner {
+        margin-top: 10rem;
+        margin-right: auto;
+        padding-left: 57px;
+    }
+    
+    .banner h1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 250; /* Medium */
+        font-size: 64px;
+        font-weight: bold;
+        
+    }
+    
+    .banner p {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        color: #555;
+        max-width: 600px;
+        
+    }
+    
+    .image-section {
+        margin-top: 5rem;
+        margin-right: auto;
+        padding-left: 57px;
+        max-width: 1440px; 
+
+
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto; 
+        border-radius: 10px; 
+    }
+
+    .reviews {
+        margin-top: 12rem;
+        margin-right: auto;
+        padding-left: 57px;
+        width: 100%;
+  
+        
+    }
+    
+    .reviews h2 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 250; /* Medium */
+        font-size: 64px;
+        font-weight: bold;
+    }
+    
+    .reviews-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .review-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: left;
+    }
+    
+    .review-card p {
+        font-size: 24px;
+        margin-bottom: 50px;
+        max-width: 400px;
+    }
+    
+    .review-author {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .review-author img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    .review-author div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .review-author strong {
+        font-size: 20px;
+    }
+    
+    .review-author span {
+        font-size: 20px;
+        color: gray;
+    }
+    .footer{
+        border: 1px solid black; /* Borda preta fina */
+        background: #0DAEF2;
+        margin-top: 10rem;
+        height: 1000px;
+    }
+
+    .footer h1{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 250; /* Medium */
+        font-size: 64px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .patrocinadores {
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .item {
+        width: 45%;
+        text-align: center;
+        padding: 10px;
+        background-color: #0DAEF2;
+        color: white;
+    }
+
+    
+</style>
 </html>
