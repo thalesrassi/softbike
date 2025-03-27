@@ -19,7 +19,8 @@
             <a href="#reviews">Avaliações</a>
             <a href="#">Sobre Nós</a>
             <a href="#patrocinadores">Patrocínios</a>
-            <a href="#">Contato</a>     
+            <a href="#footer">Contato</a>
+            <a href="briefing.html">Empresa</a>
         </div>
         <div class="icons">
             <img src="images/icons/Insta.svg" height="24px" width="24px" alt="Insta">
@@ -42,10 +43,10 @@
 
     <div class="banner">
         <h1>Produtos Destaque!</h1>
-        <p>Explore nosso catálogo completo e encontre a bicicleta perfeita para você!</p>
+        <p>Explore nosso <a href="catalogo.html">catálogo</a> completo e encontre a bicicleta perfeita para você!</p>
     </div>
 
-    <div class="container-catalogo">    
+    <div class="container-catalogo">
         <div class="catalogo">
             <div class="container">
                 <img src="images/catalog/bike1.jpg" alt="Produto 1">
@@ -108,7 +109,7 @@
                 </div>
             </div>
         </div>
-    
+
     <div class="review-card">
         <p>"Variedade incrível e qualidade excepcional!"</p>
         <div class="review-author">
@@ -181,10 +182,10 @@
     </div>
 </footer>
 
-    
+
 <div class="footer-separator"></div>
 
-<footer class="footer info-footer">
+<footer class="footer info-footer" id="footer">
     <div class="info">
         <div>
             <img src="images/icons/Map pin.png" alt="Localização">
@@ -202,7 +203,7 @@
     <div class="separator"></div>
     <div class="about">
         <h3>SOBRE NOSSA EMPRESA</h3>
-        <p>Somos uma empresa especializada em vendas e compras de bicicletas novas, usadas e semi-novas. Estamos abertos desde 2015, temos os melhores preços do mercado, estamos sempre passando confiança e qualidade para nossos clientes.</p>
+        <p>Somos uma empresa especializada em vendas e compras de bicicletas novas, usadas e semi-novas. Estamos abertos desde 2019, temos os melhores preços do mercado, estamos sempre passando confiança e qualidade para nossos clientes.</p>
     </div>
 </footer>
 
@@ -212,7 +213,7 @@
     </footer> -->
 
 
-    
+
 </body>
 <style>
     body{
@@ -253,7 +254,7 @@
         gap: 2px;
         display: flex;
         align-items: center;
-    
+
     }
     .icons{
         margin-left: auto;
@@ -270,58 +271,58 @@
         margin-right: auto;
         padding-left: 57px;
     }
-    
+
     .banner h1 {
         font-family: 'Inter', sans-serif;
         font-weight: 250; /* Medium */
         font-size: 64px;
         font-weight: bold;
-        
+
     }
-    
+
     .banner p {
         font-family: 'Inter', sans-serif;
         font-size: 24px;
         color: #555;
         max-width: 600px;
-        
+
     }
-    
+    .banner p a{
+        text-decoration: none;
+        color:#0DAEF2 ;
+    }
+
     .image-section {
         margin-top: 5rem;
         margin-right: auto;
         padding-left: 57px;
-        max-width: 1440px; 
+        max-width: 1440px;
 
 
     }
 
     .image-section img {
         width: 100%;
-        height: auto; 
-        border-radius: 10px; 
+        height: auto;
+        border-radius: 10px;
     }
 
-    body{
-        margin: 0;
-        background-color: #E5E5E5;
-    }
     .container-catalogo{
         align-items: center;
-        padding:  40px 203px;
+        padding-left:57px;
         display: flex;
-        justify-content: center;
+        justify-content: start;
     }
     .catalogo {
             display: grid;
             grid-template-columns: repeat(3, max-content);
             gap: 20px;
-            padding: 20px;
+
         }
 
         .container-texto{
             padding: 23px;
-        }    
+        }
 
         .container {
             background: #FAFAF5;
@@ -393,7 +394,7 @@
             grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas pequenas */
           }
         }
-        
+
     .reviews {
     margin-top: 12rem;
     margin-right: auto;
@@ -402,21 +403,21 @@
     flex-direction: column;
     align-items: center;
     }
-    
+
     .reviews h2 {
         font-family: 'Inter', sans-serif;
         font-weight: 250; /* Medium */
         font-size: 64px;
         font-weight: bold;
     }
-    
+
     .reviews-container {
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
     }
-    
+
     .review-card {
         background: white;
         padding: 30px;
@@ -426,34 +427,34 @@
         text-align: left;
         box-sizing: border-box;
     }
-    
+
     .review-card p {
         font-size: 24px;
         margin-bottom: 50px;
         max-width: 400px;
     }
-    
+
     .review-author {
         display: flex;
         align-items: center;
         gap: 10px;
     }
-    
+
     .review-author img {
         width: 40px;
         height: 40px;
         border-radius: 50%;
     }
-    
+
     .review-author div {
         display: flex;
         flex-direction: column;
     }
-    
+
     .review-author strong {
         font-size: 20px;
     }
-    
+
     .review-author span {
         font-size: 20px;
         color: gray;
@@ -473,7 +474,7 @@
 footer .patrocinadores img {
     width: 160px; /* Imagem ocupa o padrão definido */
     height: auto; /* Para manter a proporção da imagem */
-    
+
 }
 
     .footer h1{
@@ -490,14 +491,14 @@ footer .patrocinadores img {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .row {
         display: flex;
         justify-content: space-around;
         align-items: center;
         gap: 20px;
     }
-    
+
     .item {
         width: 45%;
         text-align: center;
@@ -539,6 +540,7 @@ footer .patrocinadores img {
         text-align: left;
     }
     .footer .about h3 {
+        font-family: 'Inter', sans-serif;
         margin: 0 0 10px 0;
         font-size: 20px;
         font-weight: bold;
@@ -548,6 +550,6 @@ footer .patrocinadores img {
         width: 1px;
         background-color: rgb(0, 0, 0);
     }
-    
+
 </style>
 </html>
