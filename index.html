@@ -309,6 +309,8 @@
     .container-catalogo{
         align-items: center;
         padding:  40px 203px;
+        display: flex;
+        justify-content: center;
     }
     .catalogo {
             display: grid;
@@ -318,7 +320,7 @@
         }
 
         .container-texto{
-            margin-left: 23px;
+            padding: 23px;
         }    
 
         .container {
@@ -328,27 +330,30 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: left;
             width: 388px;
-            height: 405px;
+            height: 430px;
+            display: flex;
+            flex-direction: column;
         }
 
         .container img {
             max-width: 388px;
             width: 100%;
             border-radius: 8px;
+            margin-bottom: 8px;
         }
 
         .container h3 {
-            margin-top: 10px;
+            margin: 0px 0px 8px;
             font-size: 20px;
             font-family: 'Inter', sans-serif;
             font-weight: bold;
         }
 
         .container p {
-            font-size: 20px;
+            font-size: 16px;
             color: gray;
             font-family: 'Inter', sans-serif;
-            font-weight: bold;
+            margin: 0px;
         }
 
         #preco{
@@ -356,6 +361,7 @@
             color: #0DAEF2;
             font-family: 'Inter', sans-serif;
             font-weight: bold;
+            margin: 0px 0px 25px;
         }
 
         .container button {
@@ -376,25 +382,25 @@
 
 
 
-        @media (max-width: 900px) {
+        @media (max-width: 1280px) {
          .catalogo {
             grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
             }
          }
 
-        @media (max-width: 600px) {
+        @media (max-width: 900px) {
          .catalogo {
             grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas pequenas */
           }
         }
-
-    .reviews {
-        margin-top: 12rem;
-        margin-right: auto;
-        padding-left: 57px;
-        width: 100%;
-  
         
+    .reviews {
+    margin-top: 12rem;
+    margin-right: auto;
+    padding: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
     
     .reviews h2 {
@@ -408,7 +414,7 @@
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
     
     .review-card {
@@ -487,7 +493,7 @@ footer .patrocinadores img {
     
     .row {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         gap: 20px;
     }
